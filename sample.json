@@ -1,0 +1,42 @@
+{
+  "content": "あなたの製品選択を始めましょう。あなたのニーズは何ですか？",
+  "children": [
+    {
+      "content": "オプション1：パフォーマンスが重要ですか？",
+      "children": [
+        {
+          "content": "はい、パフォーマンスが重要です。",
+          "children": [
+            {
+              "content": "高性能製品をお求めですか？",
+              "children": ["https://example.com/product/high-performance"]
+            }
+          ]
+        },
+        {
+          "content": "いいえ、コストが重要です。",
+          "children": [
+            {
+              "content": "コスト効率の良い製品をお求めですか？",
+              "children": ["https://example.com/product/cost-effective"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content": "オプション2：使いやすさが重要ですか？",
+      "children": [
+        {
+          "content": "はい、使いやすさが重要です。",
+          "children": [
+            {
+              "content": "ユーザーフレンドリーな製品をお求めですか？",
+              "children": ["https://example.com/product/user-friendly"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
