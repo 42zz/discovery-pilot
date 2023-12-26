@@ -1,25 +1,29 @@
 .dp-question-title {
   font-size: 20px;
   color: #333;
-  // その他のスタイル
 }
 
 .dp-question-list {
   list-style-type: none;
   padding: 0;
-  // その他のスタイル
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .dp-question-item {
-  margin: 10px 0;
   padding: 10px;
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   cursor: pointer;
-  // その他のスタイル
 
   &:hover {
     background-color: #eaeaea;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 

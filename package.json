@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/discovery-pilot.ts",
-    "build-css": "sass src/discovery-pilot.scss dist/discovery-pilot.css",
-    "build": "tsc && npm run build-css"
+    "dev": "tsc --watch && sass --watch src:dist",
+    "build:sass": "sass src:dist",
+    "build": "tsc && npm run build:sass"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.0.2",
     "sass": "^1.69.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"

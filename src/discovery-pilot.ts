@@ -1,5 +1,6 @@
 type QuestionNode = {
-  content: string;
+  name: string;
+  question: string;
   children: Array<QuestionNode | string>;
 };
 class DiscoveryPilot {
@@ -18,7 +19,7 @@ class DiscoveryPilot {
   }
 
   private displayQuestion(): void {
-    this.container.innerHTML = `<h2>${this.currentQuestion.content}</h2>`;
+    this.container.innerHTML = `<h2 class="dp-question-title">${this.currentQuestion.question}</h2>`;
 
     const list = document.createElement("ul");
     list.className = "dp-question-list";
@@ -31,11 +32,11 @@ class DiscoveryPilot {
         const link = document.createElement("a");
         link.href = child;
         link.target = "_blank";
-        link.textContent = child;
+        link.innerHTML = child;
         listItem.appendChild(link);
       } else {
         // 通常の質問項目の場合
-        listItem.textContent = child.content;
+        listItem.innerHTML = child.name;
         listItem.addEventListener("click", () => {
           this.questionHistory.push(this.currentQuestion);
           this.currentQuestion = child;

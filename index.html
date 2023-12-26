@@ -2,50 +2,203 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>製品選択アシスタント</title>
-    <link rel="stylesheet" href="./dist/discovery-pilot.css">
+    <title>DiscoveryPilot</title>
+    <link rel="stylesheet" href="./dist/discovery-pilot.css" />
+    <link rel="stylesheet" href="./dist/discovery-pilot-theme.css" />
   </head>
   <body>
     <div id="questionnaire"></div>
     <script src="./dist/discovery-pilot.js"></script>
     <script type="text/javascript">
       const questions = {
-        content: "あなたの製品選択を始めましょう。あなたのニーズは何ですか？",
+        name: "色",
+        question: "何色が好きですか？",
         children: [
           {
-            content: "オプション1：パフォーマンスが重要ですか？",
+            name: "赤<img src='demo/red.jpg'/>",
+            question: "好きな食べ物はなんですか？",
             children: [
               {
-                content: "はい、パフォーマンスが重要です。",
+                name: "りんご<img src='demo/apple.png'/>",
+                question:
+                  "りんごにはどのような栄養素が豊富に含まれていますか？",
                 children: [
                   {
-                    content: "高性能製品をお求めですか？",
-                    children: ["https://example.com/product/high-performance"],
+                    name: "ビタミンC",
+                    question:
+                      "正解です。りんごにはビタミンCが豊富に含まれており、他にも食物繊維や様々なビタミン、ミネラルも含まれています。カフェイン、オメガ3脂肪酸、タンパク質はりんごには多く含まれていません。",
+                    children: [],
+                  },
+                  {
+                    name: "カフェイン",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "タンパク質",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "オメガ3脂肪酸",
+                    question: "違います",
+                    children: [],
                   },
                 ],
               },
               {
-                content: "いいえ、コストが重要です。",
+                name: "トマト<img src='demo/tomato.png'/>",
+                question: "トマトの赤い色素は何と呼ばれていますか？",
                 children: [
                   {
-                    content: "コスト効率の良い製品をお求めですか？",
-                    children: ["https://example.com/product/cost-effective"],
+                    name: "カロテン",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "リコピン",
+                    question:
+                      "正解です。リコピンはトマトの赤い色素で、抗酸化作用があります。他にも、トマトにはビタミンCやビタミンA、カリウム、食物繊維などが含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "アントシアニン",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
+              },
+              {
+                name: "いくら<img src='demo/ikura.png'/>",
+                question:
+                  "いくらにはどのような栄養素が特に豊富に含まれていますか？",
+                children: [
+                  {
+                    name: "カルシウム",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "ビタミンD",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "ヨウ素",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "オメガ3脂肪酸",
+                    question:
+                      "いくらは特にオメガ3脂肪酸が豊富で、これは心臓病のリスクを減らすなど、様々な健康効果があるとされています。また、ビタミンDも含まれていますが、オメガ3脂肪酸の方がより顕著です。カルシウムとヨウ素はいくらにはあまり含まれていません。",
+                  },
+                ],
+              },
+              {
+                name: "梅干し<img src='demo/umeboshi.png'/>",
+                question: "梅干しにはどのような成分が含まれており、特に健康に良いとされていますか？",
+                children: [
+                  {
+                    name: "クエン酸",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "カフェイン",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "カルシウム",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "クエン酸",
+                    question:
+                      "梅干しにはクエン酸が豊富に含まれており、疲労回復や健康維持に効果があるとされています。カフェイン、タンパク質、カルシウムは梅干しの主要な成分ではありません。",
+                    children: [],
                   },
                 ],
               },
             ],
           },
           {
-            content: "オプション2：使いやすさが重要ですか？",
+            name: "青<img src='demo/blue.jpg'/>",
+            question: "青色と聞いて思い浮かべるものはなんですか？",
             children: [
               {
-                content: "はい、使いやすさが重要です。",
-                children: [
-                  {
-                    content: "ユーザーフレンドリーな製品をお求めですか？",
-                    children: ["https://example.com/product/user-friendly"],
-                  },
-                ],
+                name: "海<img src='demo/sea.png'/>",
+                question: "",
+                children: [],
+              },
+              {
+                name: "青い猫<img src='demo/cat.png'/>",
+                question: "",
+                children: [],
+              },
+              {
+                name: "空<img src='demo/sky.png'/>",
+                question: "",
+                children: [],
+              },
+              {
+                name: "地球<img src='demo/earth.png'/>",
+                question: "",
+                children: [],
+              },
+            ],
+          },
+          {
+            name: "黄<img src='demo/yellow.jpg'/>",
+            question: "好きな黄色のキャラクターはなんですか？",
+            children: [
+              {
+                name: "ピカチュウ",
+                question: "",
+                children: [],
+              },
+              {
+                name: "くまのぷーさん",
+                question: "",
+                children: [],
+              },
+              {
+                name: "スポンジボブ",
+                question: "",
+                children: [],
+              },
+              {
+                name: "ふなっしー",
+                question: "",
+                children: [],
+              },
+            ],
+          },
+          {
+            name: "緑<img src='demo/green.jpg'/>",
+            question: "好きなお茶の種類はなんですか？",
+            children: [
+              {
+                name: "緑茶",
+                question: "",
+                children: [],
+              },
+              {
+                name: "麦茶",
+                question: "",
+                children: [],
+              },
+              {
+                name: "烏龍茶",
+                question: "",
+                children: [],
+              },
+              {
+                name: "紅茶",
+                question: "",
+                children: [],
               },
             ],
           },
