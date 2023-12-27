@@ -97,7 +97,8 @@
               },
               {
                 name: "梅干し<img src='demo/umeboshi.png'/>",
-                question: "梅干しにはどのような成分が含まれており、特に健康に良いとされていますか？",
+                question:
+                  "梅干しにはどのような成分が含まれており、特に健康に良いとされていますか？",
                 children: [
                   {
                     name: "クエン酸",
@@ -129,50 +130,122 @@
             question: "青色と聞いて思い浮かべるものはなんですか？",
             children: [
               {
-                name: "海<img src='demo/sea.png'/>",
-                question: "",
-                children: [],
+                name: "<a href='https://ja.wikipedia.org/wiki/%E6%B5%B7'>海<img src='demo/sea.png'/></a>",
+                question: "ページ遷移します",
+                children: ["https://ja.wikipedia.org/wiki/%E6%B5%B7"],
               },
               {
-                name: "青い猫<img src='demo/cat.png'/>",
-                question: "",
-                children: [],
+                name: "<a href='https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%B3'>青い猫<img src='demo/cat.png'/></a>",
+                question: "ページ遷移します",
+                children: ["https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%B3"],
               },
               {
-                name: "空<img src='demo/sky.png'/>",
-                question: "",
-                children: [],
+                name: "<a href='https://ja.wikipedia.org/wiki/%E7%A9%BA'>空<img src='demo/sky.png'/></a>",
+                question: "ページ遷移します",
+                children: ["https://ja.wikipedia.org/wiki/%E7%A9%BA"],
               },
               {
-                name: "地球<img src='demo/earth.png'/>",
-                question: "",
-                children: [],
+                name: "<a href='https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83'>地球<img src='demo/earth.png'/></a>",
+                question: "ページ遷移します",
+                children: ["https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83"],
               },
             ],
           },
           {
             name: "黄<img src='demo/yellow.jpg'/>",
-            question: "好きな黄色のキャラクターはなんですか？",
+            question: "好きな黄色の果物はなんですか？",
             children: [
               {
-                name: "ピカチュウ",
-                question: "",
-                children: [],
+                name: "レモン<img src='demo/lemon.png'/>",
+                question:
+                  "レモンにはどのような栄養素が豊富に含まれていますか？",
+                children: [
+                  {
+                    name: "ビタミンC",
+                    question:
+                      "正解です。レモンにはビタミンCが豊富に含まれており、他にもカリウムや食物繊維などが含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "カルシウム",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "鉄",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
               },
               {
-                name: "くまのぷーさん",
-                question: "",
-                children: [],
+                name: "バナナ<img src='demo/banana.png'/>",
+                question:
+                  "バナナにはどのような栄養素が豊富に含まれていますか？",
+                children: [
+                  {
+                    name: "カリウム",
+                    question:
+                      "正解です。バナナにはカリウムが豊富に含まれており、他にもビタミンCや食物繊維も含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "ビタミンD",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "カフェイン",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
               },
               {
-                name: "スポンジボブ",
-                question: "",
-                children: [],
+                name: "パイナップル<img src='demo/pine.png'/>",
+                question:
+                  "パイナップルにはどのような栄養素が豊富に含まれていますか？",
+                children: [
+                  {
+                    name: "ビタミンC",
+                    question:
+                      "正解です。パイナップルにはビタミンCが豊富に含まれており、他にもマンガンや食物繊維も含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "カルシウム",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "鉄",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
               },
               {
-                name: "ふなっしー",
-                question: "",
-                children: [],
+                name: "マンゴー<img src='demo/mango.png'/>",
+                question:
+                  "マンゴーにはどのような栄養素が豊富に含まれていますか？",
+                children: [
+                  {
+                    name: "ビタミンA",
+                    question:
+                      "正解です。マンゴーにはビタミンAが豊富に含まれており、他にもビタミンCや食物繊維も含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "ビタミンB12",
+                    question: "違います",
+                    children: [],
+                  },
+                  {
+                    name: "カルシウム",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
               },
             ],
           },
@@ -181,24 +254,97 @@
             question: "好きなお茶の種類はなんですか？",
             children: [
               {
-                name: "緑茶",
-                question: "",
-                children: [],
+                name: "緑茶<img src='demo/greentea.png'/>",
+                question: "緑茶にはどのような栄養素が豊富に含まれていますか？",
+                children: [
+                  {
+                    name: "カテキン",
+                    question:
+                      "正解です。緑茶にはカテキンが豊富に含まれており、他にもビタミンCやアミノ酸も含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "カフェイン",
+                    question:
+                      "部分的に正解ですが、緑茶にはカテキンやビタミンCも豊富です。",
+                    children: [],
+                  },
+                  {
+                    name: "カルシウム",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
               },
               {
-                name: "麦茶",
-                question: "",
-                children: [],
+                name: "麦茶<img src='demo/mugi.png'/>",
+                question: "麦茶にはどのような栄養素が含まれていますか？",
+                children: [
+                  {
+                    name: "ポリフェノール",
+                    question:
+                      "正解です。麦茶にはポリフェノールが含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "カフェイン",
+                    question:
+                      "違います。麦茶にはカフェインは含まれていません。",
+                    children: [],
+                  },
+                  {
+                    name: "ビタミンC",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
               },
               {
-                name: "烏龍茶",
-                question: "",
-                children: [],
+                name: "烏龍茶<img src='demo/oolong.png'/>",
+                question:
+                  "烏龍茶にはどのような栄養素が豊富に含まれていますか？",
+                children: [
+                  {
+                    name: "カテキン",
+                    question:
+                      "正解です。烏龍茶にはカテキンが豊富に含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "カフェイン",
+                    question:
+                      "部分的に正解ですが、烏龍茶にはカテキンも豊富です。",
+                    children: [],
+                  },
+                  {
+                    name: "ビタミンC",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
               },
               {
-                name: "紅茶",
-                question: "",
-                children: [],
+                name: "紅茶<img src='demo/redtea.png'/>",
+                question: "紅茶にはどのような栄養素が豊富に含まれていますか？",
+                children: [
+                  {
+                    name: "テアフラビン",
+                    question:
+                      "正解です。紅茶にはテアフラビンが豊富に含まれています。",
+                    children: [],
+                  },
+                  {
+                    name: "カフェイン",
+                    question:
+                      "部分的に正解ですが、紅茶にはテアフラビンも豊富です。",
+                    children: [],
+                  },
+                  {
+                    name: "ビタミンC",
+                    question: "違います",
+                    children: [],
+                  },
+                ],
               },
             ],
           },

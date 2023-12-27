@@ -19,6 +19,15 @@ class DiscoveryPilot {
   }
 
   private displayQuestion(): void {
+    // URL チェック用の簡易的な正規表現　https:// または http:// で始まる文字列
+    const urlPattern = /^(https?|http):\/\//;
+
+    // currentQuestion.question が URL の場合、ページをリダイレクトする
+    if (urlPattern.test(this.currentQuestion.question)) {
+      window.location.href = this.currentQuestion.question;
+      return;
+    }
+
     this.container.innerHTML = `<h2 class="dp-question-title">${this.currentQuestion.question}</h2>`;
 
     const list = document.createElement("ul");
